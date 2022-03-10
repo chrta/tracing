@@ -29,6 +29,7 @@ fn memfd_create_syscall(flags: c_uint) -> i64 {
             "tracing-journald\0".as_ptr() as *const c_char,
             flags,
         )
+        .into()
     }
 }
 
